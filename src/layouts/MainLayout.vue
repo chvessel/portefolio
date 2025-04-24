@@ -4,7 +4,6 @@
       <nav class="sidebar">
         <ul>
           <li><router-link to="/" class="menu-link">Home</router-link></li>
-          <li><router-link to="/about" class="menu-link">About me</router-link></li>
           <li><router-link to="/components/buttons" class="menu-link">Buttons</router-link></li>
           <li><router-link to="/components/cards" class="menu-link">Cards</router-link></li>
           <li><router-link to="/components/forms" class="menu-link">Forms</router-link></li>
