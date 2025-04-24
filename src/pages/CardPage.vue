@@ -15,5 +15,8 @@ import FileCard from '@/components/cards/FileCard.vue';
 <style>
 .card-positon{
     margin: 70px 20px 30px 40px;
+    display: flex;
+    gap: 30px;
 }
+
 </style>

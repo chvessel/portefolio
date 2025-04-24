@@ -5,10 +5,10 @@
 <template>
    <div class="card-container">
     <div class="top">
-        <img src="../../media/coding.jpg" alt="">
+        <img src="../../media/coding.jpg" alt="picture of code">
     </div>
     <div class="bottom">
-        <h3>her er noget tekst</h3>
+        <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
         <button>læs mere</button>
     </div>
    </div>
@@ -16,24 +16,15 @@
 
 <style scoped>
 .card-container{
-    display: flex;
     background-color: beige;
-    height: 20rem;
-    width: 20rem;
+    height: 18rem;
+    width: 17rem;
     border-radius: 15px;
     position: relative;
 }
 
-.top{
-
-}
-
 img{
 width: 100%;
-}
-
-.bottom{
-
 }
 
 h3{
@@ -51,5 +42,6 @@ button{
     position: absolute;
     right: 10px;
     bottom: 10px;
+    cursor: pointer;
 }
 </style>
