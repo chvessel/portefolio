@@ -8,6 +8,7 @@ import FileCard from '@/components/cards/FileCard.vue';
 <div class="card-positon">
     <FileCard></FileCard>
     <blog-card></blog-card>
+    <product-card></product-card>
 </div>
 
 </template>
