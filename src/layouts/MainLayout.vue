@@ -27,7 +27,7 @@
   
   .sidebar {
     position: relative;
-    width: 250px;
+    min-width: 250px;
     color: white;
     padding: 20px;
     margin-top: 50px;
@@ -37,6 +37,7 @@
     margin-bottom: 50px;
     background: linear-gradient(to bottom, rgba(54, 53, 53, 0.6), rgb(22, 22, 22));
     box-shadow: 15px 0 10px rgba(0, 0, 0, 0.4);
+    
     
   }
 
