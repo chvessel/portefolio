@@ -8,6 +8,7 @@
           <li><router-link to="/components/cards" class="menu-link">Cards</router-link></li>
           <li><router-link to="/components/forms" class="menu-link">Forms</router-link></li>
           <li><router-link to="/components/designs" class="menu-link">Website designs</router-link></li>
+          <li><router-link to="/components/projects" class="menu-link">Projects</router-link></li>
         </ul>
       </nav>
   
