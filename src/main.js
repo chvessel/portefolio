@@ -13,7 +13,7 @@ app.use(router)
 app.mount('#app')
 
 app.component('font-awesome-icon', FontAwesomeIcon);
-// icons registered here.
+
 library.add(faCalendarDays);
 library.add(faAngleDown);
 library.add(faFloppyDisk);
