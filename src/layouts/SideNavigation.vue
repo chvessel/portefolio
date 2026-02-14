@@ -13,7 +13,6 @@ const toggleMenu = (menuName) => {
 
 const menuItems = [
   { name: "home", label: "Home", path: "/" },
-
   {
     name: "buttons",
     label: "Buttons",
@@ -66,13 +65,16 @@ const menuItems = [
   { name: "project", label: "Projects", path: "/project" },
 ];
 
+
 watch(
   () => route.path,
   (newPath) => {
     const parent = menuItems.find((item) =>
       item.subItems?.some((sub) => sub.path === newPath)
     );
-    openMenu.value = parent ? parent.name : null;
+    if (parent) {
+      openMenu.value = parent.name;
+    }
   },
   { immediate: true }
 );
@@ -94,7 +96,7 @@ const navigate = (path) => {
       <li v-for="item in menuItems" :key="item.name">
         <button
           type="button"
-          :class="{ active: openMenu === item.name }"
+          :class="{ active: openMenu === item.name || route.path === item.path }"
           @click="item.subItems ? toggleMenu(item.name) : navigate(item.path)"
         >
           <p>{{ item.label }}</p>
@@ -112,7 +114,11 @@ const navigate = (path) => {
           >
             <ul>
               <li v-for="sub in item.subItems" :key="sub.path">
-                <button type="button" @click="navigate(sub.path)">
+                <button 
+                  type="button" 
+                  :class="{ active: route.path === sub.path }"
+                  @click="navigate(sub.path)"
+                >
                   {{ sub.label }}
                 </button>
               </li>
@@ -147,7 +153,7 @@ ul {
   width: 250px;
   border-radius: 30px;
   padding: 0 18px;
-  min-height:calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   background: linear-gradient(
     175deg,
     rgba(0, 0, 0, 0.682),
@@ -175,16 +181,42 @@ ul {
   color: rgba(196, 196, 196, 0.95);
 }
 
-.sidebar button:is(.active, :hover) {
-  background: rgb(0 0 0 / 30%);
+
+.sidebar button.active {
+  background-color: #3c5037b6;
+  color: #ffffff;
 }
 
+.sidebar button:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
 .sub-menu {
-  padding-left: 60px;
+  padding-left: 20px; 
+  margin: 5px 0;
 }
 
 .sub-menu button {
-  font-size: 20px;
+  font-size: 18px;
+  height: 40px; 
+  color: rgba(196, 196, 196, 0.7);
+}
+
+
+.sub-menu button.active {
+  background-color: #71906a8a;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+.ai-chevron-down-small {
+  transition: transform 0.3s ease;
+  margin-left: auto;
+}
+
+.ai-chevron-down-small.rotated {
+  transform: rotate(180deg);
 }
 
 .slide-enter-active,

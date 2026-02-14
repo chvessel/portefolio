@@ -33,6 +33,7 @@ import BasicTabs from "@/pages/tabs/BasicTabs.vue";
 import CollapsibleTabs from "@/pages/tabs/CollapsibleTabs.vue";
 import FolderTabs from "@/pages/tabs/FolderTabs.vue";
 
+
 const routes = [
   {
     path: "",
