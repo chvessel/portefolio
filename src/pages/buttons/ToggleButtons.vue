@@ -2,8 +2,8 @@
 import DayNightToggle from '@/components/buttons/DayNightToggle.vue';
 import RegularToggle from '@/components/buttons/RegularToggle.vue';
 import ShiftToggle from '@/components/buttons/ShiftToggle.vue';
-import FlipToggle from './FlipToggle.vue';
-import ChooseToggle from './ChooseToggle.vue';
+import FlipToggle from '../../components/buttons/FlipToggle.vue';
+import ChooseToggle from '../../components/buttons/ChooseToggle.vue';
 
 
 </script>
