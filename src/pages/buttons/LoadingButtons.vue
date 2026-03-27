@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import DownloadeButtons from '@/components/buttons/DownloadeButtons.vue';
+
+</script>
+
 <template>
-   <h1>kommer senere</h1> 
+  <DownloadeButtons /> 
 </template>
