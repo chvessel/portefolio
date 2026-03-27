@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 
 import { 
-  faCalendarDays, faSpinner, faEllipsisV, faListUl, faGrip, faPlus, 
+  faCalendarDays, faSync, faSpinner, faEllipsisV, faListUl, faGrip, faPlus, 
   faFolderPlus, faArrowUp, faUser, faGear,faCreditCard, 
   faTv,         
   faTasks, faMagnifyingGlass, 
@@ -17,7 +17,7 @@ import {
   faCirclePlus, faArrowsUpDownLeftRight, faTrashCan 
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faSpinner, faUser, faGear, faCreditCard, faTv, faTasks);
+library.add(faSync, faSpinner, faUser, faGear, faCreditCard, faTv, faTasks);
 
 import { 
   faFile, faFolder, faCircle, faFloppyDisk, 
