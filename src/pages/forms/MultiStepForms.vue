@@ -1,3 +1,8 @@
+<script setup>
+import MultistepForm from '@/components/forms/MultistepForm.vue';
+
+</script>
+
 <template>
-   <h1>Kommer senere</h1> 
+   <MultistepForm /> 
 </template>
