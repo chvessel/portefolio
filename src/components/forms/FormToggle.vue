@@ -1,10 +1,9 @@
 <script setup>
 import { ref } from 'vue'
 
-// Styrer hvilken fane der er aktiv
+
 const activeTab = ref('profile')
 
-// Liste over dine tabs - husk at navne skal matche din main.js import
 const tabs = [
   { id: 'profile', icon: 'fa-solid fa-user', label: 'Personal Info' },
   { id: 'payment', icon: 'fa-solid fa-credit-card', label: 'Payment Info' },

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import SideNavigation from "./SideNavigation.vue";
 </script>
 

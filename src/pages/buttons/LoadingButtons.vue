@@ -1,4 +1,5 @@
 <script setup>
+import CircleLoads from '@/components/buttons/CircleLoads.vue';
 import DotLoadingBtn from '@/components/buttons/DotLoadingBtn.vue';
 import DownloadeButtons from '@/components/buttons/DownloadeButtons.vue';
 
@@ -7,4 +8,5 @@ import DownloadeButtons from '@/components/buttons/DownloadeButtons.vue';
 <template>
   <DownloadeButtons /> 
   <DotLoadingBtn />
+  <CircleLoads />
 </template>
