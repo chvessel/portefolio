@@ -3,37 +3,60 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 
 import { 
-  faCalendarDays, faSync, faSpinner, faEllipsisV, faListUl, faGrip, faPlus, 
-  faFolderPlus, faArrowUp, faUser, faGear,faCreditCard, 
+  faHouse, 
+  faEnvelope, 
+  faBell, 
+  faCalendar, 
+  faUser, 
+  faGear,
+  faCalendarDays, 
+  faSync, 
+  faSpinner, 
+  faEllipsisV, 
+  faListUl, 
+  faGrip, 
+  faPlus, 
+  faFolderPlus, 
+  faArrowUp, 
+  faCreditCard, 
   faTv,         
-  faTasks, faMagnifyingGlass, 
-  faArrowLeft, faAngleDown, faPrint, faUpDownLeftRight, 
-  faCirclePlus, faArrowsUpDownLeftRight, faTrashCan 
+  faTasks, 
+  faMagnifyingGlass, 
+  faArrowLeft, 
+  faAngleDown, 
+  faPrint, 
+  faUpDownLeftRight, 
+  faCirclePlus, 
+  faArrowsUpDownLeftRight, 
+  faTrashCan 
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faSync, faSpinner, faUser, faGear, faCreditCard, faTv, faTasks);
 
 import { 
-  faFile, faFolder, faCircle, faFloppyDisk, 
-  faPenToSquare, faCopy, faCircleQuestion 
+  faFile, 
+  faFolder, 
+  faCircle, 
+  faFloppyDisk, 
+  faPenToSquare, 
+  faCopy, 
+  faCircleQuestion 
 } from "@fortawesome/free-regular-svg-icons";
 
 
 library.add(
-  faCalendarDays, faEllipsisV, faListUl, faGrip, faPlus, 
-  faFolderPlus, faArrowUp, faUser, faGear, faMagnifyingGlass, 
-  faArrowLeft, faAngleDown, faPrint, faUpDownLeftRight, 
-  faCirclePlus, faArrowsUpDownLeftRight, faTrashCan,
-  faFile, faFolder, faCircle, faFloppyDisk, 
+  faHouse, faEnvelope, faBell, faCalendar, faUser, faGear,
+  faCalendarDays, faSync, faSpinner, faEllipsisV, faListUl, 
+  faGrip, faPlus, faFolderPlus, faArrowUp, faCreditCard, 
+  faTv, faTasks, faMagnifyingGlass, faArrowLeft, faAngleDown, 
+  faPrint, faUpDownLeftRight, faCirclePlus, faArrowsUpDownLeftRight, 
+  faTrashCan, faFile, faFolder, faCircle, faFloppyDisk, 
   faPenToSquare, faCopy, faCircleQuestion
 );
-
 
 const app = createApp(App)
 

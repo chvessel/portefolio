@@ -1,3 +1,8 @@
+<script setup>
+import MobileIconTab from '@/components/icons/MobileIconTab.vue';
+
+</script>
+
 <template>
-   <h1>kommer senere</h1> 
+      <MobileIconTab />
 </template>
