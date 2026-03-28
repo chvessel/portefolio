@@ -55,7 +55,7 @@ onMounted(() => {
 <style scoped>
 .wrapper {
   text-align: center;
-  margin: 50px auto;
+  margin: -50px 20px auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
