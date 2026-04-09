@@ -1,4 +1,9 @@
+<script setup>
+import FolderTab from '@/components/tabs/FolderTab.vue';
+
+</script>
+
 
 <template>
-   <h1>kommer senere</h1> 
+   <FolderTab /> 
 </template>

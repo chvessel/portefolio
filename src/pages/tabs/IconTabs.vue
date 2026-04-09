@@ -1,6 +1,6 @@
 <script setup>
-import MobileIconTab from '@/components/icons/MobileIconTab.vue';
-import StretchTabs from '@/components/icons/StretchTabs.vue';
+import MobileIconTab from '@/components/tabs/MobileIconTab.vue';
+import StretchTabs from '@/components/tabs/StretchTabs.vue';
 import MobileTabBar from './MobileTabBar.vue';
 
 </script>
